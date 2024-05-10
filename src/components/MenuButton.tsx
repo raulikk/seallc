@@ -1,4 +1,4 @@
-import {  Box, Image, Icon } from '@chakra-ui/react'
+import {  Icon } from '@chakra-ui/react'
 
 import { IoMenu ,IoCloseCircleOutline } from "react-icons/io5";
 

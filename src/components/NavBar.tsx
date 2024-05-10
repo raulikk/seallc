@@ -1,4 +1,4 @@
-import { Flex, Link as ChakraLink, List, ListItem ,Text, textDecoration} from '@chakra-ui/react'
+import { Flex, Link as ChakraLink,Text} from '@chakra-ui/react'
 import { Link as ReactRouterLink, useLocation } from "react-router-dom";
 
 

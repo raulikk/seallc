@@ -1,18 +1,26 @@
-import { Box, Heading,Flex,Text, Center,  VStack } from '@chakra-ui/react'
-import React from 'react'
+import { Box, Flex,Text, VStack } from '@chakra-ui/react'
 
 const ContactPage = () => {
   return (
   <VStack paddingTop="130px"  > 
   
-    <Flex h="80vh" gap="20"  paddingLeft="100px" w="100%"  > 
+    <Flex h="80vh"  
+    gap="4"
+    direction="column"
+    paddingLeft={{
+      xl:"100px",
+      lg:"60px",
+      md:"50px",
+      sm:"30px",
+      base:"10px"}} w="100%"  > 
     <Box> 
-      <Text w="50ch" lineHeight='2.3'>Through a combination of evidence-based therapies, specialized education, and personalized support, we empower children with autism to develop essential skills and reach their full potential. Whether it's improving communication, building social connections, or enhancing daily living skills, we're here to support each child every step of the way.  At [Business Name], we prioritize collaboration and partnership with families, educators, and therapists to ensure that each child receives comprehensive and coordinated care </Text>
+      <Text fontSize="0.9rem" w="40ch" lineHeight='1.7'>Have a question, comment, or just want to say hello? We'd love to hear from you! Feel free to reach out to us using any of the methods below: </Text>
     </Box>
+    <Box>
+    <Text> email:  info@supportenrichadvocate.com</Text>
+       </Box> 
 
-    <Box boxSize="400px" bg="pink"> 
     
-    </Box>
 
     </Flex>
    
