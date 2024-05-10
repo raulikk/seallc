@@ -6,7 +6,7 @@ const HomePage = () => {
   return (
     <VStack gap="0" > 
    
-   
+
     <Center  position="relative" h="100vh" w="100%"  overflow='hidden'> 
         <video  
         style={{ position:'absolute',zIndex:-1, height:'auto', width:'auto', minWidth:'100%', minHeight:'100%',objectFit:'cover' }}
@@ -86,9 +86,9 @@ const HomePage = () => {
     </Flex>
 
 
-    <Center h="20vh"> 
+    <Center h="25vh" marginTop="20px" bg="#47B8B1" w="100%"> 
       <Button borderRadius="50px" padding="25px" color="white" bg="rgba(36, 62, 91, 1.0)"> 
-        Contact
+        Lets Chat!  
       </Button>
     </Center>
 
