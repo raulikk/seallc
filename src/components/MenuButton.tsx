@@ -1,36 +1,39 @@
-import { Button, Box, Image } from '@chakra-ui/react'
-import React from 'react'
-import menuIcon from "../assets/icons/menuIcon.svg"
-import menuCloseIcon from "../assets/icons/menuCloseIcon.svg"
+import {  Box, Image, Icon } from '@chakra-ui/react'
 
+import { IoMenu ,IoCloseCircleOutline } from "react-icons/io5";
 
 
 interface Props{ 
   onButtonClick: () => void; 
-  visibility : boolean; 
-
+  visibility :  boolean; 
 }
 
 
-const MenuButton = ({onButtonClick, visibility=false}:Props) => {
+const MenuButton = ({onButtonClick, visibility}:Props) => {
 
  //const menuIcon = "X" 
  
   return (
     
-    <Box 
-    position='fixed' 
-    w="65px"  
-    right="0" 
-    margin='45px' 
-    zIndex={300}
-    onClick={() => onButtonClick()}
-    >
-    <Image src={visibility ?   menuCloseIcon : menuIcon}  /> : 
-    </Box>
 
-  //  <Button position='fixed' right="0" margin='45px' zIndex={300} onClick={() => onButtonClick()}>{menuIcon}</Button>
-  
+    <Icon 
+    position='fixed'
+
+    right="30px"
+    top="30px"
+    color="white"
+    display={{
+      base:"inherit",
+      sm:"inherit",
+      md:"none",
+      lg:"none"
+    }}
+
+    boxSize={12}  
+    as={visibility ? IoCloseCircleOutline : IoMenu} 
+    onClick={onButtonClick} 
+    zIndex="400" />
+    
   )
 }
 

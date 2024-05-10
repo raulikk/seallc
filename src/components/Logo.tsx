@@ -7,9 +7,19 @@ const Logo = () => {
    position='fixed'
    left='0'
 
-   w="150px"
+   w={{
+    xl:"150px", 
+    lg:"130px", 
+    md: "120px", 
+    sm:"100px",
+    base:"100px"}}
+
    zIndex={200}
-   margin="45px">  
+   margin={{
+    xl:"45px",
+    sm:'30px 20px', 
+    base:'30px 20px'
+    }}>  
   <Box   
     as="svg" 
     xmlns="http://www.w3.org/2000/svg"
