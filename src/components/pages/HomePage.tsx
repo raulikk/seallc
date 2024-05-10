@@ -17,7 +17,7 @@ const HomePage = () => {
     </Flex>
 
     <Flex> 
-      Home Page  Base Contact Section
+      Home Page Base Contact Section here
     </Flex>
 
 
