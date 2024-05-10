@@ -1,16 +1,20 @@
-import { Flex, Box, Text, VStack, Center} from '@chakra-ui/react'
-
+import { Flex, Box, Text, VStack, Center, Image} from '@chakra-ui/react'
+import footerLogo from "../assets/seaLlcLogoFull.svg" 
 
 const Footer = () => {
   return (
-    <VStack bg="#47B8B1"   alignContent="space-between" alignItems="space-between" padding="40px" > 
+    <VStack bg="#47B8B1"   alignContent="space-between" alignItems="space-between" padding="40px 40px 10px 40px" > 
       
       <Flex justifyContent="space-between">
-         <Box boxSize="40px" bg="white">Logo </Box>
-      <Box>Address </Box>
+         <Box w="200px" >
+          <Image src={footerLogo} />
+         </Box>
+      <Box>
+        <Text color="white" w="15ch"> 3310 Kent Rd , Suite 26,  Stow, OH-44224</Text>
+      </Box>
       </Flex>
       <Center>
-         <Text> 
+         <Text color="white"> 
          © 2024 SEA LLC. All Rights Reserved.
          </Text>
       </Center>

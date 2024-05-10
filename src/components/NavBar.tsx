@@ -2,10 +2,18 @@ import { Flex, Link as ChakraLink, List, ListItem ,Text} from '@chakra-ui/react'
 import { Link as ReactRouterLink, useLocation } from "react-router-dom";
 
 
-const NavBar = () => {
+
+interface Props{ 
+  onLinkClick: () => void;
+
+}
+
+
+
+
+const NavBar = ({onLinkClick}: Props) => {
 
     //let location = useLocation();
-
 
     const menuLinks = [    
         { id:'1',  name: "Home" , path: "/" }, 
@@ -15,8 +23,6 @@ const NavBar = () => {
       
       ]
    
-
-
   return (
     <Flex  
     bg={{
@@ -45,6 +51,14 @@ const NavBar = () => {
       sm:'inherit', 
       base:"inherit"
     }}
+    position='relative'
+    bottom={{
+      xl:"inherit",
+      lg:"inherit",
+      md:"inherit",
+      sm: "50px",
+      base:"50px"
+    }}
     gap={{
       xl: "10",
       lg: "10", 
@@ -68,7 +82,16 @@ const NavBar = () => {
     to={page.path}
     > 
       
-    <Text key={page.id} > {page.name}</Text>
+    <Text key={page.id} 
+    fontSize={{
+      xl: "inherit", 
+      lg: "inherit", 
+      md: "inherit", 
+      sm : "1.5rem",
+      base:"1.7rem"
+    }}
+    onClick={() => onLinkClick()}
+    > {page.name}</Text>
 
 
       

@@ -36,18 +36,20 @@ const HomePage = () => {
         base: "100%"
        }}
       aspectRatio="2/0.8" 
-      position='relative' bg="blue" overflow='hidden'> 
+      position='relative' 
+       overflow='hidden'> 
       <Image src={autismImage} position='absolute' w="100%"  />  
       </Box>  
      
        <Center   
        
-       w={{xl: "30vw", 
-        lg : "30vw", 
-        md: "30vw",
-        sm: "100%",
-        base:"100%"
-       }}
+      w={{xl: "30vw", 
+      lg : "30vw", 
+      md: "30vw",
+      sm: "100%",
+      base:"100%"
+      }}
+      
        bg={{
         xl: "inherit",  
         lg: "red",

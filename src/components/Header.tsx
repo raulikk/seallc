@@ -1,14 +1,25 @@
 
 import { Flex, Button } from '@chakra-ui/react'
-import React from 'react'
+import React, { useState } from 'react'
 import Logo from './Logo'
 import NavBar from './NavBar'
 
-const Header = () => {
+
+
+interface Props {
+  visibility: boolean; 
+  onLinkClick: () => void; 
+}
+
+
+const Header = ({visibility, onLinkClick}: Props) => {
+
+
+
   return (
     <Flex   
 
-    position='absolute' 
+    position='fixed' 
     w="100%" 
     h= {{
        xl: "inherit", 
@@ -18,9 +29,25 @@ const Header = () => {
       base:'100vh'
     }}
     justifyContent="center" 
-    zIndex={999}
+    alignItems='center'
+    zIndex={100}
     overflow="hidden"
-   
+
+
+
+    transform= {{
+      md: "inherit",
+      lg:"inherit",
+      xl: "inherit",
+      sm: visibility ? "translateY(0%)" :  "translateY(-100%)",
+      base: visibility ? "translateY(0%)" :  "translateY(-100%)" , 
+  
+     
+    }}
+
+
+    transition=  "transform 350ms ease-out"
+
     bg= { {
       xl: "inherit", 
       lg: "inherit",
@@ -29,12 +56,12 @@ const Header = () => {
       base: "rgba(71, 184, 177, 1.0)", 
     }}
 
-    border="1px solid red" 
+  
 
     >
-        <Logo/> 
-        <NavBar /> 
-        <Button  position="fixed" right="20px" top="20px">X</Button>
+        
+        <NavBar  onLinkClick={() => onLinkClick()} /> 
+     
     </Flex>
   )
 }
