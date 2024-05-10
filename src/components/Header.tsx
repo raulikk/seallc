@@ -52,8 +52,8 @@ const Header = ({visibility, onLinkClick}: Props) => {
       xl: "inherit", 
       lg: "inherit",
       md: "inherit", 
-      sm: "rgba(71, 184, 177, 1.0)", 
-      base: "rgba(71, 184, 177, 1.0)", 
+      sm: "#243E5B", 
+      base: "#243E5B", 
     }}
 
   

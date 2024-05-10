@@ -13,7 +13,7 @@ const Layout = () => {
   const [menuVisible, setMenuVisible]=useState(false)
   return (
     <>
-      <Logo/> 
+      <Logo visibility={menuVisible} /> 
       <Show below="md"> 
       <MenuButton  visibility={menuVisible} onButtonClick={() => setMenuVisible(!menuVisible)}/>
       </Show>

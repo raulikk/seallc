@@ -3,7 +3,7 @@ import footerLogo from "../assets/seaLlcLogoFull.svg"
 
 const Footer = () => {
   return (
-    <VStack bg="#47B8B1"   alignContent="space-between" alignItems="space-between" padding="40px 40px 10px 40px" > 
+    <VStack bg="rgba(36, 62, 91, 1.10)"   alignContent="space-between" alignItems="space-between" padding="40px 40px 10px 40px" > 
       
       <Flex justifyContent="space-between">
          <Box w="200px" >

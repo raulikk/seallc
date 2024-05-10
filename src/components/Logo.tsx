@@ -1,7 +1,14 @@
 import { Box } from '@chakra-ui/react'
-import React from 'react'
 
-const Logo = () => {
+
+
+interface Props { 
+  visibility: boolean
+}
+
+
+
+const Logo = ({visibility}: Props) => {
   return (
    <Box 
    position='fixed'
@@ -28,8 +35,8 @@ const Logo = () => {
       xl:"#364e6d",
       lg: "#364e6d", 
       md: "#364e6d",
-      sm:"#364e6d",
-      base: "#364e6d"
+      sm: visibility ? "white" : "#364e6d",
+      base: visibility ? "white" : "#364e6d",
     }}
     strokeWidth={0}
    >

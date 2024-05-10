@@ -21,7 +21,7 @@ const MenuButton = ({onButtonClick, visibility}:Props) => {
 
     right="30px"
     top="30px"
-    color="white"
+    color={visibility ? "white" : "#364e6d"}
     display={{
       base:"inherit",
       sm:"inherit",

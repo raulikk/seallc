@@ -14,7 +14,25 @@ const HomePage = () => {
         autoPlay loop muted>
         <source src="https://videos.pexels.com/video-files/856204/856204-uhd_3840_2160_25fps.mp4" type="video/mp4"/>
         </video>
-        
+        <Text 
+        fontSize={{
+          xl:"2.5rem", 
+          lg: "2.3rem",
+          md: "2.2rem",
+          sm: "1.7rem", 
+          base: "1.3rem"
+        }} 
+        w={{
+          xl: "30ch",
+          lg: "30ch", 
+          md: "30ch",
+          sm:"30ch",
+          base: "30ch"
+        }}
+      
+        marginBottom="130px"
+        marginLeft="25px"
+      position='absolute'>Sea of Dreams,Waves of Progress </Text>
     </Center>
 
   
@@ -50,12 +68,7 @@ const HomePage = () => {
       base:"100%"
       }}
       
-       bg={{
-        xl: "inherit",  
-        lg: "red",
-        md:"blue", 
-        sm:"pink", 
-        base:"green"}}
+      
 > 
       <VStack alignItems='start'   >
       <Text w="25ch" 
@@ -66,7 +79,7 @@ const HomePage = () => {
         md: "1rem", 
         base: "1.3rem"
       }} >Compassionate and effective support for individuals on the autism spectrum.</Text>
-        <Button borderRadius="45px" bg="#47B8B1">Learn more...</Button>
+        <Button borderRadius="45px" bg="rgba(36, 62, 91, 1.0)" color="white">Learn more...</Button>
         </VStack>
       </Center>
      
@@ -74,7 +87,7 @@ const HomePage = () => {
 
 
     <Center h="20vh"> 
-      <Button borderRadius="50px" padding="25px" bg="#47B8B1"> 
+      <Button borderRadius="50px" padding="25px" color="white" bg="rgba(36, 62, 91, 1.0)"> 
         Contact
       </Button>
     </Center>
