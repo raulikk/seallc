@@ -1,6 +1,6 @@
-import { Box, Text, VStack,Flex, Center, Image, Heading, Button } from '@chakra-ui/react'; 
+import { Box, Text, VStack,Flex, Center, Image, Button } from '@chakra-ui/react'; 
 import autismImage from '../../assets/images/autisticGirl.jpg'
-import React from 'react'
+
 
 const HomePage = () => {
   return (
