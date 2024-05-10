@@ -86,7 +86,13 @@ const HomePage = () => {
     </Flex>
 
 
-    <Center h="25vh" marginTop="20px" bg="#47B8B1" w="100%"> 
+    <Center h="25vh" marginTop={{
+      xl:"inherit", 
+      lg:"inherid", 
+      md: "inherit", 
+      sm: "25px" , 
+      base: "25px"
+    }} bg="#47B8B1" w="100%"> 
       <Button borderRadius="50px" padding="25px" color="white" bg="rgba(36, 62, 91, 1.0)"> 
         Lets Chat!  
       </Button>
