@@ -4,7 +4,7 @@ import { Link as ReactRouterLink, useLocation } from "react-router-dom";
 
 const NavBar = () => {
 
-    let location = useLocation();
+    //let location = useLocation();
 
 
     const menuLinks = [    
@@ -19,12 +19,46 @@ const NavBar = () => {
 
   return (
     <Flex  
-    bg='rgba(71, 184, 177, 0.4)'
+    bg={{
+      xl: 'rgba(71, 184, 177, 0.4)',
+      lg: 'rgba(71, 184, 177, 0.4)', 
+      md: 'rgba(71, 184, 177, 0.4)', 
+      sm: "red", 
+      base: 'red'
+
+    }}
     justifyContent="center"
+  
     alignItems="center"
-    marginTop="25px"
-    gap={10}
-    padding="40px"
+    direction={ {
+      xl: 'row',
+      lg: 'row', 
+      md: 'row',
+      sm:'column',
+      base: 'column'
+    }}
+    
+    marginTop= {{
+      xl: "25px",
+      lg: "25px",
+      md:"25px",
+      sm:'inherit', 
+      base:"inherit"
+    }}
+    gap={{
+      xl: "10",
+      lg: "10", 
+      md: "10", 
+      sm: "5", 
+      base: "5"
+    }}
+    padding={{
+      xl: "40px",
+      lg: "40px", 
+      md: "40px", 
+      sm:"inherit", 
+      base:"inherit"
+    }}
     >
     
     {  menuLinks.map( page => (

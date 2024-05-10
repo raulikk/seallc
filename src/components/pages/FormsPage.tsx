@@ -1,8 +1,19 @@
+import { VStack, Center, Heading } from '@chakra-ui/react';
 import React from 'react'
 
 const FormsPage = () => {
   return (
-    <div>Forms Page</div>
+   
+    <Center h="100vh"> 
+      
+      <Heading> 
+      This Page Is Currently Under Construction 
+      </Heading>
+  
+    </Center>
+
+
+  
   )
 }
 

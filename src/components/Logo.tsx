@@ -5,7 +5,10 @@ const Logo = () => {
   return (
    <Box 
    position='fixed'
-   left="0" 
+   left={{
+    xl:"0", 
+    base:"inherit"
+    }}
    w="150px"
    zIndex={10}
    margin="45px">  
@@ -13,7 +16,10 @@ const Logo = () => {
     as="svg" 
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 198.06 83.12"
-    fill="#364e6d"
+    fill={{
+      xl:"#364e6d",
+      base: "white"
+    }}
     strokeWidth={0}
    >
   <path  

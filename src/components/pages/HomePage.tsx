@@ -18,27 +18,64 @@ const HomePage = () => {
     </Center>
 
   
-    <Flex   h="50vh"   w="100%"> 
-      <Box w="70vw" position='relative' bg="blue" overflow='hidden'> 
+    <Flex   
+     w="100%"
+     direction={{
+      xl:"row", 
+      lg:"row", 
+      md:"row", 
+      sm:"column",
+      base:"column"
+     }}
+     > 
+      <Box w={{
+        xl:"70vw",
+        lg:"70vw", 
+        md: "70vw",
+        sm: "100%", 
+        base: "100%"
+       }}
+      aspectRatio="2/0.8" 
+      position='relative' bg="blue" overflow='hidden'> 
       <Image src={autismImage} position='absolute' w="100%"  />  
       </Box>  
-       <Center   w="30vw"> 
-        <VStack  alignItems="start" >
-        <Text w="25ch" lineHeight='2.2' fontSize='1.5rem' >Compassionate and effective support for individuals on the autism spectrum.</Text>
+     
+       <Center   
+       
+       w={{xl: "30vw", 
+        lg : "30vw", 
+        md: "30vw",
+        sm: "100%",
+        base:"100%"
+       }}
+       bg={{
+        xl: "inherit",  
+        lg: "red",
+        md:"blue", 
+        sm:"pink", 
+        base:"green"}}
+> 
+      <VStack alignItems='start'   >
+      <Text w="25ch" 
+      lineHeight='2.2'
+      fontSize={{
+        xl:'1.5rem',
+        lg: "1.3rem",
+        md: "1rem", 
+        base: "1.3rem"
+      }} >Compassionate and effective support for individuals on the autism spectrum.</Text>
         <Button borderRadius="45px" bg="#47B8B1">Learn more...</Button>
         </VStack>
       </Center>
      
-
     </Flex>
+
 
     <Center h="20vh"> 
       <Button borderRadius="50px" padding="25px" bg="#47B8B1"> 
         Contact
       </Button>
     </Center>
-
-
 
 
     </VStack>

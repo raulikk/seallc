@@ -3,7 +3,7 @@ import { Flex, Box, Text, VStack, Center} from '@chakra-ui/react'
 
 const Footer = () => {
   return (
-    <VStack bg="#47B8B1" h="15vh" margin="0" alignContent="space-between" alignItems="space-between" padding="40px" > 
+    <VStack bg="#47B8B1"   alignContent="space-between" alignItems="space-between" padding="40px" > 
       
       <Flex justifyContent="space-between">
          <Box boxSize="40px" bg="white">Logo </Box>
