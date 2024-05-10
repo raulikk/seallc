@@ -10,9 +10,9 @@ const Header = () => {
     position='fixed' 
     w="100vw" 
     justifyContent="center" 
+    zIndex={100}
    // border="1px solid red" 
 
-  
     >
         <Logo/> 
         <NavBar /> 
